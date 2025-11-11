@@ -87,7 +87,7 @@ public class RaceControllerTest {
   }
 
   @Nested
-  class 게임_통합 {
+  class 게임_실행_통합 {
 
     @Mock
     MockedStatic<Dice> dice;
@@ -139,7 +139,7 @@ public class RaceControllerTest {
     }
 
     @Test
-    void 시합_결과_성공_흐름() {
+    void 시합_결과_성공_호출() {
       String[] logs = {"최종 우승자 : A-1, C-1"};
 
       RaceController controller = new RaceController(inputView, outputView);
