@@ -6,7 +6,7 @@ public class Car {
   private String name;
   private int movement = 0;
 
-  Car(String name) {
+  public Car(String name) {
     this.validate(name);
     this.name = name;
   }
@@ -23,7 +23,7 @@ public class Car {
     return this.movement;
   }
 
-  void move(int amount) {
+  public void move(int amount) {
     int AVAILABLE_MOVE_AMOUNT = 4;
 
     if (amount < AVAILABLE_MOVE_AMOUNT) return;
